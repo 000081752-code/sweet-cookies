@@ -1,0 +1,719 @@
+/* ==============================
+   SWEET COOKIES - ESTILOS
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #3d2418;
+    line-height: 1.6;
+}
+
+/* ==============================
+   NAVEGACIÓN
+   ============================== */
+
+.header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(80, 45, 20, 0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    min-height: 75px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #6b351e;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #5b3829;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d87538;
+}
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    min-height: 650px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background:
+        radial-gradient(circle at 85% 30%, #ffd9b8 0 13%, transparent 14%),
+        linear-gradient(135deg, #fff0df, #ffe4c7);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-small {
+    color: #d36b2f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    line-height: 0.95;
+    color: #5b2d1d;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d87538;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    color: #69483a;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: #c9632c;
+    color: white;
+    box-shadow: 0 8px 20px rgba(201, 99, 44, 0.25);
+}
+
+.btn-primary:hover {
+    background: #a94e20;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: white;
+    color: #8b4525;
+    border: 2px solid #d98952;
+}
+
+.btn-secondary:hover {
+    background: #fff4eb;
+    transform: translateY(-3px);
+}
+
+.hero-cookie {
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle at 25% 25%, #f5d09d 0 4%, transparent 5%),
+        radial-gradient(circle at 70% 30%, #5a2d18 0 5%, transparent 6%),
+        radial-gradient(circle at 40% 65%, #613018 0 5%, transparent 6%),
+        radial-gradient(circle at 75% 70%, #5a2d18 0 4%, transparent 5%),
+        radial-gradient(circle at 50% 40%, #6d351d 0 45%, #9b542e 46% 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0;
+    box-shadow:
+        0 30px 50px rgba(75, 39, 20, 0.25),
+        inset -15px -15px 25px rgba(60, 25, 10, 0.15);
+
+    transform: rotate(-8deg);
+}
+
+/* ==============================
+   SECCIONES
+   ============================== */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title > p {
+    color: #d87538;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 2.7rem;
+    color: #542b1b;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   BENEFICIOS
+   ============================== */
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(90, 50, 25, 0.08);
+
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(90, 50, 25, 0.14);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    color: #63341f;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   SABORES
+   ============================== */
+
+.flavors-section {
+    max-width: 100%;
+    background: #fff0df;
+}
+
+.flavors-section .section-title,
+.flavors {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flavors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.flavor-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 25px;
+    position: relative;
+
+    box-shadow: 0 12px 30px rgba(85, 45, 20, 0.1);
+
+    transition: 0.3s;
+}
+
+.flavor-card:hover {
+    transform: translateY(-8px);
+}
+
+.flavor-card.featured {
+    border: 3px solid #d87538;
+}
+
+.cookie-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle at 30% 25%, #572b17 0 5%, transparent 6%),
+        radial-gradient(circle at 70% 35%, #572b17 0 5%, transparent 6%),
+        radial-gradient(circle at 40% 70%, #572b17 0 5%, transparent 6%),
+        radial-gradient(circle at 75% 75%, #572b17 0 5%, transparent 6%),
+        #a85d32;
+
+    box-shadow: inset -8px -8px 15px rgba(50, 20, 5, 0.2);
+}
+
+.flavor-card h3 {
+    font-size: 1.4rem;
+    color: #5b2d1d;
+    margin-bottom: 10px;
+}
+
+.flavor-card p {
+    color: #735548;
+    margin-bottom: 20px;
+}
+
+.flavor-btn {
+    background: #f4d2b3;
+    border: none;
+    color: #63341f;
+    padding: 11px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.flavor-btn:hover {
+    background: #d87538;
+    color: white;
+}
+
+.popular {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: #d87538;
+    color: white;
+
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* ==============================
+   PROMOCIÓN
+   ============================== */
+
+.promotion {
+    padding: 90px 25px;
+    background: linear-gradient(135deg, #6b351e, #a95229);
+    color: white;
+    text-align: center;
+}
+
+.promotion-small {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ffd3ad;
+    margin-bottom: 15px;
+}
+
+.promotion h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.promotion p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn-light {
+    background: white;
+    color: #8c4525;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+    background: #fff1e5;
+}
+
+/* ==============================
+   TESTIMONIO
+   ============================== */
+
+.testimonial-section {
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 750px;
+    margin: auto;
+}
+
+.stars {
+    color: #e69b34;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #603a2b;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    color: #8b6655;
+}
+
+/* ==============================
+   FORMULARIO
+   ============================== */
+
+.contact-section {
+    background: #fff0df;
+    max-width: 100%;
+}
+
+.contact-section .section-title {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(80, 40, 20, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #573123;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+
+    border: 2px solid #ead5c4;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-family: inherit;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d87538;
+}
+
+.form-button {
+    width: 100%;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+.footer {
+    background: #3c2117;
+    color: white;
+    padding: 45px 25px 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer h3 {
+    color: #ffd2ae;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    color: #e6cfc1;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    color: #ffd2ae;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+}
+
+/* ==============================
+   RESPONSIVE / CELULAR
+   ============================== */
+/* ==============================
+   DISEÑO RESPONSIVE
+   ============================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-cookie {
+        width: 340px;
+        height: 280px;
+        transform: rotate(0deg);
+    }
+
+    .benefits,
+    .flavors {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-cookie {
+        width: 100%;
+        max-width: 330px;
+        height: 230px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .promotion h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form {
+        padding: 25px 18px;
+    }
+}
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-cookie {
+        width: 270px;
+        height: 270px;
+    }
+
+    .benefits,
+    .flavors {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .promotion h2 {
+        font-size: 2.3rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.05rem;
+    }
+
+    .hero-cookie {
+        width: 220px;
+        height: 220px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sweet Cookies: galletas artesanales de chocolate, chispas de chocolate y canela. Descubre tu sabor favorito y haz tu pedido.">
+
+    <meta name="keywords" content="galletas, Sweet Cookies, galletas artesanales, chocolate, canela, postres">
+
+    <meta name="author" content="Ariadna Cassandra Alonso Ayala">
+
+    <title>Sweet Cookies | Tu antojo, tu sabor 🍪</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                🍪 Sweet Cookies
+            </a>
+
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#promocion">Promoción</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    🍪 GALLETAS ARTESANALES
+                </p>
+
+                <h1>
+                    Tu antojo,<br>
+                    <span>tu sabor.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Descubre galletas deliciosas hechas para acompañar
+                    tus mejores momentos.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#sabores" class="btn btn-primary">
+                        Ver sabores
+                    </a>
+
+                    <a href="#contacto" class="btn btn-secondary">
+                        Haz tu pedido
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-cookie">
+    <img src="cookie.jpg" alt="Galletas con chispas de chocolate Sweet Cookies">
+</div>
+</div>
+
+        </section>
+
+
+        <!-- BENEFICIOS -->
+        <section id="beneficios" class="section">
+
+            <div class="section-title">
+
+                <p>¿POR QUÉ SWEET COOKIES?</p>
+
+                <h2>
+                    Una galleta para cada momento
+                </h2>
+
+            </div>
+
+            <div class="benefits">
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">🍫</div>
+                    <h3>Sabores deliciosos</h3>
+                    <p>
+                        Elige entre diferentes sabores pensados
+                        para satisfacer tu antojo.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon"> </div>
+                    <h3>Hechas con cariño</h3>
+                    <p>
+                        Cuidamos cada detalle para ofrecerte
+                        una experiencia deliciosa.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">💖</div>
+                    <h3>Pensadas para ti</h3>
+                    <p>
+                        Conoce nuestros sabores y encuentra
+                        el que más se adapte a tus gustos.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <div class="flavors">
+
+    <article class="flavor-card featured">
+
+        <span class="popular">FAVORITA</span>
+
+        <div class="cookie-image">
+            <img src="cookie.jpg" alt="Galleta con chispas de chocolate">
+        </div>
+
+        <h3>🍫 Chispas de Chocolate</h3>
+
+        <p>
+            Galleta artesanal suave por dentro,
+            crujiente por fuera y llena de chispas
+            de chocolate.
+        </p>
+
+        <button class="flavor-btn"
+                onclick="seleccionarSabor('Chispas de Chocolate')">
+            Elegir sabor
+        </button>
+
+    </article>
+
+
+    <article class="flavor-card">
+
+        <div class="cookie-image">
+            <img src="cookie.jpg" alt="Galleta de chocolate">
+        </div>
+
+        <h3>🍫 Chocolate</h3>
+
+        <p>
+            El sabor perfecto para los amantes
+            del chocolate. Intenso, dulce y delicioso.
+        </p>
+
+        <button class="flavor-btn"
+                onclick="seleccionarSabor('Chocolate')">
+            Elegir sabor
+        </button>
+
+    </article>
+
+
+    <article class="flavor-card">
+
+        <div class="cookie-image">
+            <img src="cookie.jpg" alt="Galleta de canela">
+        </div>
+
+        <h3>🤎 Canela</h3>
+
+        <p>
+            Una combinación casera y aromática
+            que te hará querer otra galleta.
+        </p>
+
+        <button class="flavor-btn"
+                onclick="seleccionarSabor('Canela')">
+            Elegir sabor
+        </button>
+
+    </article>
+
+</div>
+
+            <div class="section-title">
+
+                <p>NUESTROS SABORES</p>
+
+                <h2>
+                    ¿Cuál es tu favorita?
+                </h2>
+
+            </div>
+
+            <div class="flavors">
+
+                <article class="flavor-card">
+
+                    <div class="cookie-image">
+                        🍪
+                    </div>
+
+                    <h3>Chocolate</h3>
+
+                    <p>
+                        Para quienes disfrutan un sabor
+                        intenso y delicioso.
+                    </p>
+
+                    <button
+                        class="flavor-btn"
+                        onclick="seleccionarSabor('Chocolate')">
+                        Elegir sabor
+                    </button>
+
+                </article>
+
+
+                <article class="flavor-card featured">
+
+                    <div class="cookie-image">
+                        🍪
+                    </div>
+
+                    <span class="popular">
+                        FAVORITA
+                    </span>
+
+                    <h3>Chispas de Chocolate</h3>
+
+                    <p>
+                        Una combinación clásica que nunca
+                        pasa de moda.
+                    </p>
+
+                    <button
+                        class="flavor-btn"
+                        onclick="seleccionarSabor('Chispas de Chocolate')">
+                        Elegir sabor
+                    </button>
+
+                </article>
+
+
+                <article class="flavor-card">
+
+                    <div class="cookie-image">
+                        🍪
+                    </div>
+
+                    <h3>Canela</h3>
+
+                    <p>
+                        Un sabor dulce y especial para
+                        disfrutar en cualquier momento.
+                    </p>
+
+                    <button
+                        class="flavor-btn"
+                        onclick="seleccionarSabor('Canela')">
+                        Elegir sabor
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIÓN -->
+        <section id="promocion" class="promotion">
+
+            <div>
+
+                <p class="promotion-small">
+                    🍪 PROMOCIÓN ESPECIAL
+                </p>
+
+                <h2>
+                    Tu sabor favorito<br>
+                    tiene premio.
+                </h2>
+
+                <p>
+                    Elige tu sabor favorito y recibe información
+                    sobre nuestras próximas promociones.
+                </p>
+
+                <a href="#contacto" class="btn btn-light">
+                    Quiero mi promoción
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TESTIMONIO -->
+        <section class="section testimonial-section">
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <blockquote>
+                    “Las galletas de Sweet Cookies son perfectas
+                    para acompañar mi café. ¡La de chispas de
+                    chocolate es mi favorita!”
+                </blockquote>
+
+                <p>
+                    — Cliente Sweet Cookies
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section contact-section">
+
+            <div class="section-title">
+
+                <p>HAZ TU PEDIDO</p>
+
+                <h2>
+                    Cuéntanos qué galleta quieres 🍪
+                </h2>
+
+                <p>
+                    Completa el formulario y nos pondremos
+                    en contacto contigo.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-group">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                        minlength="3">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@correo.com"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="sabor">
+                        Sabor favorito
+                    </label>
+
+                    <select id="sabor" name="sabor" required>
+
+                        <option value="">
+                            Selecciona un sabor
+                        </option>
+
+                        <option value="Chocolate">
+                            Chocolate
+                        </option>
+
+                        <option value="Chispas de Chocolate">
+                            Chispas de Chocolate
+                        </option>
+
+                        <option value="Canela">
+                            Canela
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        placeholder="¿Qué te gustaría pedir?"
+                        rows="5"
+                        required
+                        minlength="10"></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-button">
+
+                    🍪 Enviar pedido
+
+                </button>
+
+                <p
+                    id="formMessage"
+                    class="form-message">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    🍪 Sweet Cookies
+                </h3>
+
+                <p>
+                    Tu antojo, tu sabor.
+                </p>
+
+            </div>
+
+<div class="social">
+    <span>📘 Facebook: @SweetCookies</span>
+    <span>📷 Instagram: @SweetCookies</span>
+</div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Sweet Cookies. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
